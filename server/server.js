@@ -32,7 +32,7 @@ io.on('connection', (socket) => {
     socket.on('createMessage', (message, callback) => {
         console.log('createMessage:', message);
         io.emit('newMessage', generateMessage(message.from, message.text));
-        callback('This is an ACK from the server');
+        callback();
         // io.emit('newMessage', { // emits to everyone
         //     from: message.from,
         //     text: message.text,
