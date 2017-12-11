@@ -1,4 +1,4 @@
-var expect = require('expect');
+const expect = require('expect');
 const {app} = require('./../server');
 
 var {generateMessage, generateLocationMessage} = require('./message');
